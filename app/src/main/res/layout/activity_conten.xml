@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Gambar Menu -->
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- Nama Menu -->
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageMenu"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Nama Menu"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNama"
+        android:layout_marginTop="8dp"
+        android:text="Deskripsi menu akan tampil di sini."
+        android:textSize="16sp" />
+
+    <!-- Label Bahan -->
+    <TextView
+        android:id="@+id/labelBahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDeskripsi"
+        android:layout_marginTop="16dp"
+        android:text="Bahan-bahan:"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- List Bahan -->
+    <TextView
+        android:id="@+id/tvBahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelBahan"
+        android:layout_marginTop="8dp"
+        android:text="• Bahan 1\n• Bahan 2\n• Bahan 3"
+        android:textSize="16sp" />
+
+    <!-- Label Langkah-langkah -->
+    <TextView
+        android:id="@+id/labelLangkah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBahan"
+        android:layout_marginTop="16dp"
+        android:text="Langkah-langkah:"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- List Langkah-langkah -->
+    <TextView
+        android:id="@+id/tvLangkah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelLangkah"
+        android:layout_marginTop="8dp"
+        android:text="1. Langkah pertama\n2. Langkah kedua\n3. Langkah ketiga"
+        android:textSize="16sp" />
+
+    <!-- Tombol Kembali -->
+    <TextView
+        android:id="@+id/textkeconten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvLangkah"
+        android:layout_marginTop="20dp"
+        android:text="text menuju konten tutorial"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textkeconten"
+        android:layout_marginTop="47dp"
+        android:text="Nonton" />
+
+</RelativeLayout>
